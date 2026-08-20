@@ -1,0 +1,39 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(25, 24, 24);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.button-border{
+    background: linear-gradient(115deg,#eeaf61,#fb9062,#ee5d6c,#ce4993,#6a0d83);
+    padding: 2px;
+}
+.button{
+    background: black;
+    color: #cdcdcd;
+}
+
+
+.button{
+    border: none;
+    background: black;
+    color: #cdcdcd;
+    padding: 1em 1.5em;
+    letter-spacing: .1em;
+   /*  border-image: linear-gradient(115deg,#eeaf61,#fb9062,#ee5d6c,#ce4993,#6a0d83);
+    border-image-slice: 1; */
+}
+.button-border:hover{
+    background: linear-gradient(230deg,#eeaf61,#fb9062,#ee5d6c,#ce4993,#6a0d83);
+}
+
+.button-border:hover .button{
+    color: #fff;
+    padding: 1.1em 1.6em;
+}

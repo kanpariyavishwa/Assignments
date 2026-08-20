@@ -1,0 +1,27 @@
+.flag-switz{
+    height: 200px;
+    width: 200px;
+    background:red ;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cross /* or  .cross1 */{
+    height: calc(200px*3/16);
+    width: calc(200px*5/8);
+    background: white;
+}
+.cross2{
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+/* .cross2{
+    height: calc(200px*5/8);
+    width: calc(200px*3/16);
+    background:white;
+    position: absolute;
+} */

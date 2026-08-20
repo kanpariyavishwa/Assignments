@@ -1,0 +1,38 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+ul{
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+.graph{
+    display: grid;
+    grid-template-columns: repeat(52,1fr);
+    background: #000;
+    padding: 1em;
+}
+
+.square{
+    height: 10px;
+    width: 10px;
+    background: #161b22;
+    margin: 3px;
+    margin-right:0;
+    border-radius: 2px;
+}
+
+[data-value="3"]{
+    background: blue;
+}
+
+[data-value="5"]{
+    background: darkblue;
+}
+
+[data-value="10"]{
+    background:skyblue;
+}
+

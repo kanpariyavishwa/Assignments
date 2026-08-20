@@ -1,0 +1,35 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1:after{
+    content: "";
+    animation: 6s swap infinite;
+    background: black;
+    padding: 10px;
+    color:white;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+@keyframes swap{
+    0%{
+        content: "Singing";
+    }
+      25%{
+        content: "Cats";
+    }
+      50%{
+        content: "Coding";
+    }
+      75%{
+        content: "Scrimba";
+    }
+      100%{
+        content: "Singing";
+    }
+}

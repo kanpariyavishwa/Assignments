@@ -1,0 +1,24 @@
+.flag-india{
+    height: 150px;
+    width:calc(150px*3/2);
+    margin: 2em auto;
+   /*  display: flex; */
+   display: grid;
+   grid-template-columns: repeat(3, 1fr) ;
+}
+
+/* .stripe{
+    flex-grow:1;
+} */
+
+.green{
+    background:green;
+}
+
+.white{
+    background: white;
+}
+
+.orange{
+    background: orange;
+}
