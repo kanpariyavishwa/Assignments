@@ -1,0 +1,32 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.flag-sweden{
+    height: 150px;
+    width: calc(150px*8/5);
+    background: blue;
+    display: flex;
+    margin: 2em auto;
+    position: relative;
+}
+
+.stripe{
+    background:yellow;
+    height: calc(150px*1/5);
+
+}
+
+.stripe-yellow{
+    align-self: center;
+    width: 100%;
+}
+
+.stripe-yellow1{
+    width: 150px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(150px*4/10);
+    right:calc(150px*8/16);
+}
+

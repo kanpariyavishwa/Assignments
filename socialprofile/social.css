@@ -1,0 +1,96 @@
+html,body{
+    background:#141414;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: black;
+    width: 100%;
+    max-width: 350px;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card h2{
+    color:white; 
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.card h4{
+    color: #c5f82a;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.card p{
+    color:#d6d6d6;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.buttons a{
+    text-decoration:none;
+    background:#333333;
+    color:#fff;
+    padding:15px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.buttons a:hover{
+    background: #c5f82a;
+    color: #141414;
+}
+
+/* mobile */
+@media(max-width:480px){
+    body{
+        padding: 15px;
+    }
+}
+
+.card{
+    max-width: 100%;
+    padding: 25px 18px;
+}
+
+.card img{
+    width: 80px;
+    height: 80px;
+}
+
+.card h2{
+    font-size: 22px;
+}
+
+.buttons a{
+    padding: 13px;
+    font-size: 14px;
+}

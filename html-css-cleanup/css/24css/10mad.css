@@ -1,0 +1,26 @@
+.green{
+   background: green;
+    height: calc(150px/2);
+}
+
+.white{
+    background:white;
+    width: calc(150px/2);
+}
+
+.red{
+    background: red;
+    height: calc(150px/2);
+    width: 150px;
+}
+
+.flag-madasagar{
+    height: 150px;
+    width: calc(150px*3/2);
+    margin: 2em auto;
+    display: flex;
+}
+
+html,body{
+    background: black;
+}

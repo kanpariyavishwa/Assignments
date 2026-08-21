@@ -1,0 +1,40 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: 200px;
+    width: 350px;
+    background: blue;
+    color: white;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.back{
+    display: none;
+}
+
+.card:hover .front{
+    display:none;
+}
+
+.card:hover .back{
+    display:block;
+    transform: rotateY(180deg);
+}

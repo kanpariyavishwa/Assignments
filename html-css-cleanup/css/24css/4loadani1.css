@@ -1,0 +1,25 @@
+.circle{
+    height: 1.5em;
+    width: 1.5em;
+    background-color: black;
+    margin: .5em;
+    border-radius: 50%;
+    animation: pulus infinite alternate 1s;
+}
+@keyframes pulus{
+    from{
+            background: lightgray ;
+    }
+    to{
+            background: darkgray;
+            height: 1.6em;
+            width: 1.6em;
+    }
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
