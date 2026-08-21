@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #252b46;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  padding: 35px 8%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.nav-links a {
+  color: #252b46;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-btn {
+  background: #fa5757;
+  color: white !important;
+  padding: 13px 30px;
+  border-radius: 5px;
+}
+
+.menu-btn {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  padding: 40px 8%;
+  position: relative;
+}
+
+.hero-content {
+  width: 48%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  color: #9194a1;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn.blue {
+  background: #5368df;
+  color: white;
+}
+
+.btn.grey {
+  background: #f7f7f7;
+  color: #252b46;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.hero-image {
+  width: 52%;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.blue-shape {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  background: #5368df;
+  border-radius: 150px 0 0 150px;
+  right: -250px;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+/* COMMON SECTION */
+
+.section-heading {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-heading p {
+  color: #9194a1;
+  line-height: 1.7;
+}
+
+
+/* FEATURES */
+
+.features {
+  padding: 70px 8%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 70px;
+  max-width: 750px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 20px 45px;
+  cursor: pointer;
+  color: #9194a1;
+  font-size: 15px;
+}
+
+.tab.active {
+  color: #252b46;
+  border-bottom: 3px solid #fa5757;
+}
+
+.tab-content {
+  display: none;
+  align-items: center;
+  gap: 100px;
+}
+
+.tab-content.active {
+  display: flex;
+}
+
+.feature-image {
+  width: 55%;
+  position: relative;
+}
+
+.feature-image img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-shape {
+  position: absolute;
+  background: #5368df;
+  width: 650px;
+  height: 280px;
+  border-radius: 0 150px 150px 0;
+  left: -300px;
+  bottom: -20px;
+}
+
+.feature-text {
+  width: 45%;
+}
+
+.feature-text h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.feature-text p {
+  color: #9194a1;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+
+/* DOWNLOAD */
+
+.download {
+  padding: 120px 8%;
+}
+
+.browser-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.browser-card {
+  width: 280px;
+  min-height: 350px;
+  padding: 40px 25px 25px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.browser-card:nth-child(2) {
+  transform: translateY(40px);
+}
+
+.browser-card:nth-child(3) {
+  transform: translateY(80px);
+}
+
+.browser-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.browser-card h3 {
+  margin-bottom: 10px;
+}
+
+.browser-card p {
+  color: #9194a1;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.browser-card .btn {
+  width: 100%;
+}
+
+
+/* FAQ */
+
+.faq {
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 50px auto 30px;
+  text-align: left;
+}
+
+.faq-item {
+  border-top: 1px solid #ddd;
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 16px;
+  color: #252b46;
+  text-align: left;
+}
+
+.faq-question span {
+  color: #5368df;
+  font-size: 22px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 5px 20px;
+}
+
+.faq-answer p {
+  color: #9194a1;
+  line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(180deg);
+}
+
+
+/* CONTACT */
+
+.contact {
+  background: #5368df;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.contact p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.contact h2 {
+  max-width: 450px;
+  margin: auto;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.contact form {
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 300px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-box small {
+  position: absolute;
+  left: 0;
+  top: 47px;
+  background: #fa5757;
+  width: 100%;
+  text-align: left;
+  padding: 4px 8px;
+  border-radius: 0 0 5px 5px;
+}
+
+.contact-btn {
+  border: none;
+  background: #fa5757;
+  color: white;
+  padding: 0 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #252b46;
+  color: white;
+  padding: 30px 8%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer-container > img {
+  width: 130px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.social {
+  margin-left: auto;
+  display: flex;
+  gap: 25px;
+}
+
+.social a {
+  color: white;
+  font-size: 20px;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: #8b9cff;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .header {
+    padding: 25px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    right: 25px;
+    background: white;
+    padding: 25px;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 10;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 30px 25px;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-content {
+    margin-top: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .blue-shape {
+    width: 400px;
+    height: 200px;
+    right: -200px;
+  }
+
+  .features {
+    padding: 70px 25px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .tab {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tab.active {
+    border-bottom: 3px solid #fa5757;
+  }
+
+  .tab-content.active {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .feature-image,
+  .feature-text {
+    width: 100%;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+
+  .feature-shape {
+    width: 400px;
+    height: 180px;
+    left: -200px;
+  }
+
+  .download {
+    padding: 70px 25px;
+  }
+
+  .browser-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .browser-card:nth-child(2),
+  .browser-card:nth-child(3) {
+    transform: none;
+  }
+
+  .faq {
+    padding: 70px 25px;
+  }
+
+  .contact form {
+    flex-direction: column;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  .contact-btn {
+    height: 50px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .social {
+    margin-left: 0;
+  }
+
+}
