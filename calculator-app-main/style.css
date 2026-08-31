@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  min-height: 100vh;
+
+  background: #3b4664;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+
+/* =========================
+   CALCULATOR
+========================= */
+
+.calculator {
+  width: 540px;
+  max-width: 92%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 32px;
+}
+
+
+/* =========================
+   THEME
+========================= */
+
+.theme-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-area > span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.theme-control {
+  width: 70px;
+}
+
+.theme-numbers {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.theme-switch {
+  height: 25px;
+
+  background: #252d44;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 4px;
+}
+
+.theme-btn {
+  width: 16px;
+  height: 16px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.theme-btn.active {
+  background: #d03f2f;
+}
+
+
+/* =========================
+   DISPLAY
+========================= */
+
+.display {
+  margin-bottom: 25px;
+}
+
+.display input {
+  width: 100%;
+  height: 130px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #181f32;
+  color: white;
+
+  outline: none;
+
+  padding: 20px 30px;
+
+  text-align: right;
+
+  font-family: inherit;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   KEYS
+========================= */
+
+.keys {
+  background: #252d44;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================
+   NORMAL BUTTON
+========================= */
+
+.key {
+  height: 60px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #eae3dc;
+  color: #444b5a;
+
+  font-family: inherit;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 0 #b3a497;
+
+  transition: 0.1s;
+}
+
+.key:hover {
+  background: white;
+}
+
+.key:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #b3a497;
+}
+
+
+/* =========================
+   DELETE
+========================= */
+
+.delete {
+  background: #647299;
+  color: white;
+
+  font-size: 20px;
+
+  box-shadow: 0 4px 0 #414e70;
+}
+
+.delete:hover {
+  background: #7886a8;
+}
+
+
+/* =========================
+   OPERATORS
+========================= */
+
+.operator {
+  font-size: 30px;
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+.reset {
+  grid-column: span 2;
+
+  background: #647299;
+  color: white;
+
+  font-size: 20px;
+
+  box-shadow: 0 4px 0 #414e70;
+}
+
+.reset:hover {
+  background: #7886a8;
+}
+
+
+/* =========================
+   EQUALS
+========================= */
+
+.equals {
+  grid-column: span 2;
+
+  background: #d03f2f;
+  color: white;
+
+  font-size: 25px;
+
+  box-shadow: 0 4px 0 #93261a;
+}
+
+.equals:hover {
+  background: #e04f3e;
+}
+
+
+/* =========================
+   THEME 2
+========================= */
+
+body.theme-2 {
+  background: #e6e6e6;
+  color: #35352c;
+}
+
+body.theme-2 .display input {
+  background: #eeeeee;
+  color: #35352c;
+}
+
+body.theme-2 .keys {
+  background: #d1cccc;
+}
+
+body.theme-2 .theme-switch {
+  background: #d1cccc;
+}
+
+body.theme-2 .theme-btn.active {
+  background: #ca5502;
+}
+
+body.theme-2 .equals {
+  background: #ca5502;
+  box-shadow: 0 4px 0 #893901;
+}
+
+body.theme-2 .delete,
+body.theme-2 .reset {
+  background: #377f86;
+  box-shadow: 0 4px 0 #245f65;
+}
+
+
+/* =========================
+   THEME 3
+========================= */
+
+body.theme-3 {
+  background: #17062a;
+  color: #ffe53d;
+}
+
+body.theme-3 .display input {
+  background: #1e0836;
+  color: #ffe53d;
+}
+
+body.theme-3 .keys {
+  background: #1e0836;
+}
+
+body.theme-3 .theme-switch {
+  background: #1e0836;
+}
+
+body.theme-3 .theme-btn.active {
+  background: #00ded1;
+}
+
+body.theme-3 .equals {
+  background: #00ded1;
+  color: #1b2428;
+  box-shadow: 0 4px 0 #009e94;
+}
+
+body.theme-3 .delete,
+body.theme-3 .reset {
+  background: #56077c;
+  color: white;
+  box-shadow: 0 4px 0 #390653;
+}
+
+body.theme-3 .key {
+  background: #331b4d;
+  color: #ffe53d;
+  box-shadow: 0 4px 0 #851c9c;
+}
+
+body.theme-3 .key:hover {
+  background: #43255f;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  body {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .calculator {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .display {
+    margin-bottom: 20px;
+  }
+
+  .display input {
+    height: 100px;
+
+    font-size: 40px;
+
+    padding: 15px 20px;
+  }
+
+  .keys {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .key {
+    height: 60px;
+    font-size: 26px;
+  }
+
+  .delete,
+  .reset {
+    font-size: 17px;
+  }
+
+  .equals {
+    font-size: 22px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+  .calculator {
+    max-width: 94%;
+  }
+
+  .keys {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .key {
+    height: 55px;
+    font-size: 23px;
+  }
+
+  .display input {
+    font-size: 34px;
+  }
+}
+

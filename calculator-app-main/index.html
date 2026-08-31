@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="calculator">
+
+    <!-- Header -->
+    <header class="header">
+
+      <h1>calc</h1>
+
+      <div class="theme-area">
+        <span>THEME</span>
+
+        <div class="theme-control">
+
+          <div class="theme-numbers">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+
+          <div class="theme-switch">
+            <button class="theme-btn active" data-theme="1"></button>
+            <button class="theme-btn" data-theme="2"></button>
+            <button class="theme-btn" data-theme="3"></button>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+
+    <!-- Display -->
+    <div class="display">
+      <input
+        type="text"
+        id="display"
+        value="0"
+        readonly
+        aria-label="Calculator display"
+      >
+    </div>
+
+
+    <!-- Calculator Keys -->
+    <section class="keys">
+
+      <button class="key number">7</button>
+      <button class="key number">8</button>
+      <button class="key number">9</button>
+      <button class="key delete">DEL</button>
+
+      <button class="key number">4</button>
+      <button class="key number">5</button>
+      <button class="key number">6</button>
+      <button class="key operator">+</button>
+
+      <button class="key number">1</button>
+      <button class="key number">2</button>
+      <button class="key number">3</button>
+      <button class="key operator">−</button>
+
+      <button class="key number">.</button>
+      <button class="key number">0</button>
+      <button class="key operator">/</button>
+      <button class="key operator">×</button>
+
+      <button class="key reset">RESET</button>
+      <button class="key equals">=</button>
+
+    </section>
+
+  </main>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
